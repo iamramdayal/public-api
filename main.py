@@ -9,7 +9,9 @@ models.Base.metadata.create_all(bind=engine)
 app = FastAPI()
 
 origins = [
-    "http://localhost:4200",
+    "https://links.ramdhayal.com/",
+    "https://links-ramdhayal-com.web.app/",
+    "https://links-ramdhayal-com.firebaseapp.com/"
 ]
 
 app.add_middleware(
