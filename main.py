@@ -21,3 +21,7 @@ app.add_middleware(
 )
 
 app.include_router(links.router)
+
+@app.get("/")
+def root():
+    return {"Visit": "https://www.ramdhayal.com"}
